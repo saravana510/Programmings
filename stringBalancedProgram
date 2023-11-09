@@ -1,0 +1,47 @@
+function isBalanced(x) {
+  // It will count the frequency of each character in the string
+  const charCount = new Map();
+  for (let char of x) {
+    charCount.set(char, (charCount.get(char) || 0) + 1);
+  }
+
+  //It will Check if there are exactly two different characters with the same frequency
+  if (charCount.size !== 2) {
+    return false;
+  }
+
+  const frequencies = Array.from(charCount.values());
+  return frequencies[0] === frequencies[1];
+}
+
+function getBalancedSubstrings(S) {
+  let maxLen = 0;
+  let maxSubstrings = [];
+
+  for (let i = 0; i < S.length; i++) {
+    for (let j = i + 2; j <= S.length; j++) {
+      const substring = S.substring(i, j);
+
+      if (isBalanced(substring) && substring.length >= maxLen) {
+        if (substring.length > maxLen) {
+          maxSubstrings = [substring];
+          maxLen = substring.length;
+        } else {
+          maxSubstrings.push(substring);
+        }
+      }
+    }
+  }
+
+  return maxSubstrings;
+}
+
+// Usage here
+const S1 = "cabbacccc";
+console.log(getBalancedSubstrings(S1)); // Output: ["abba"]
+
+const S2 = "abababa";
+console.log(getBalancedSubstrings(S2)); // Output: ["ababab", "bababa"]
+
+const S3 = "aaaaaaa";
+console.log(getBalancedSubstrings(S3)); // Output: []
