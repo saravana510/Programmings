@@ -5,6 +5,7 @@ A string is balanced if it consists of exactly two different characters and both
  - N is an integer within the range [1..100,000];
  - string S is made only of lowercase letters (a−z).
 
+/* Program starts here
 
 function isBalanced(x) {
   // It will count the frequency of each character in the string
@@ -53,3 +54,5 @@ console.log(getBalancedSubstrings(S2)); // Output: ["ababab", "bababa"]
 
 const S3 = "aaaaaaa";
 console.log(getBalancedSubstrings(S3)); // Output: []
+
+*/ Program ends here
