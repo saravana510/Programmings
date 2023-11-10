@@ -1,20 +1,24 @@
 1. Write a simple application using a recursive function that accepts a value (integer) and returns the fibonacci value at that position in the series.
 The application should be performant at scale to handle larger numbers without slowing down exponentially.
 
-Base Case (Step 1):
-The function begins by checking if x is less than or equal to 1. If true, it means we have reached the base case, and the function returns x. This is because Fibonacci numbers at positions 0 and 1 are 0 and 1, respectively.
-
-Initialization (Step 2):
-Two variables, prev and curr are initialized to 0 and 1, respectively. These variables will be used to keep track of the previous and current Fibonacci numbers during the iteration.
-
-Iterative Calculation (Step 3):
-The function enters a loop that iterates from i = 2 to i = n. This loop calculates Fibonacci numbers iteratively, avoiding the need for recursion.
-
-Calculate Next Fibonacci Number (Step 4):
-Inside the loop, the next Fibonacci number (curr) is calculated by adding the previous two Fibonacci numbers (prev and curr). A temporary variable (temp) is used to store curr before the update, ensuring correct calculation.
-
-Return Result (Step 5):
-After the loop, the function returns the final Fibonacci number at position x, which is stored in the variable curr
+ Base Case (Step 1):
+ The function begins by checking if x is less than or equal to 1. If true, it means we have reached the base case, and the 
+ function returns x. This is because Fibonacci numbers at positions 0 and 1 are 0 and 1, respectively.
+ 
+ Initialization (Step 2):
+ Two variables, prev and curr are initialized to 0 and 1, respectively. These variables will be used to keep track of the 
+ previous and current Fibonacci numbers during the iteration.
+ 
+ Iterative Calculation (Step 3):
+ The function enters a loop that iterates from i = 2 to i = n. This loop calculates Fibonacci numbers iteratively, avoiding 
+ the need for recursion.
+ 
+ Calculate Next Fibonacci Number (Step 4):
+ Inside the loop, the next Fibonacci number (curr) is calculated by adding the previous two Fibonacci numbers (prev and 
+ curr). A temporary variable (temp) is used to store curr before the update, ensuring correct calculation.
+ 
+ Return Result (Step 5):
+ After the loop, the function returns the final Fibonacci number at position x, which is stored in the variable curr
 
 
 2. A string is balanced if it consists of exactly two different characters and both of those characters appear exactly the same number of times. For example: "aabbab" is balanced (both 'a' and 'b' occur three times) but "aabba" is not balanced ('a' occurs three times, 'b' occurs two times). String "aabbcc" is also not balanced (it contains three different letters).A substring of string S is a string that consists of consecutive letters in S. For example: "ompu" is a substring of "computer" but "cmptr" is not.Write a function solution called getBalancedSubstrings(List<String> S) that, given a string S, returns an array of the longest balanced substring of S.Examples:
