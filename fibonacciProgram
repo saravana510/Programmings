@@ -22,6 +22,6 @@ function fibonacci(x) {
 
 const position = 10;
 const result = fibonacci(position);
-console.log(`Fibonacci(${position}) = ${result
+console.log(`Fibonacci(${position}) = ${result}`)
 
 */ program ends here
