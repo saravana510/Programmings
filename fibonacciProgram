@@ -20,7 +20,7 @@ function fibonacci(x) {
   return curr;
 }
 
-const position = 10;
+const position = 10; //You can change the value here
 const result = fibonacci(position);
 console.log(`Fibonacci(${position}) = ${result}`)
 
