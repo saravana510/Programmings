@@ -1,6 +1,8 @@
 Write a simple application using a recursive function that accepts a value (integer) and returns the fibonacci value at that position in the series.
 The application should be performant at scale to handle larger numbers without slowing down exponentially.
 
+/* Program Starts here
+
 function fibonacci(x) {
   if (x <= 1) {
     return x;
@@ -20,4 +22,6 @@ function fibonacci(x) {
 
 const position = 10;
 const result = fibonacci(position);
-console.log(`Fibonacci(${position}) = ${result}`);
+console.log(`Fibonacci(${position}) = ${result
+
+*/ program ends here
