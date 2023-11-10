@@ -55,4 +55,4 @@ console.log(getBalancedSubstrings(S2)); // Output: ["ababab", "bababa"]
 const S3 = "aaaaaaa";
 console.log(getBalancedSubstrings(S3)); // Output: []
 
-*/ Program ends here
+*/ Program ends here.
